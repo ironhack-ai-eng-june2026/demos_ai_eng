@@ -629,7 +629,7 @@ DELETE FROM students WHERE score < 60;
 <hr><hr>
 <br><br>
 
-## Practice: SQLite CRUD Operations
+## (Bonus) Practice: SQLite CRUD Operations
 
 Practice the full CRUD cycle and querying skills by building a small database from scratch.
 
@@ -707,7 +707,7 @@ Try each of the following queries:
 6. Show the top 3 highest-rated books.
 7. List all unique `available` values.
 
-### Task 4 — Update and Delete
+### Bonus — Update and Delete
 
 1. A book has been returned — set `available = 1` for `'Clean Code'`.
 2. Update the rating of `'Python Crash Course'` to `4.7`.

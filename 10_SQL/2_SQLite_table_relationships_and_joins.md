@@ -121,24 +121,28 @@ Joins are one of the core features of SQL and are essential for querying relatio
 
 
 
-Here's a useful cheatsheet:
+Here are some useful cheatsheets:
 
 
 ![](../_images/sql-joins-1.png)
 
 <br>
 
-Or, may prefer this one:
-
 ![](../_images/sql-joins-2.png)
 
 <br>
 
+<!--
+![](../_images/sql-joins-3.png)
+-->
 
-Other diagrams: 
-- https://miro.medium.com/v2/resize:fit:1400/0*gdxxtAKE9vYAjXBk.png
-- https://www.ml4devs.com/images/illustrations/sql-joins-cheatsheet.png
-- https://diegobittencourt.org/wp-content/uploads/2024/06/image.png
+
+Or, a classic cheatsheet for SQL joins...
+
+![](../_images/sql-joins-meme.png)
+
+<br>
+
 
 Also useful (detailed cheat sheet): 
 - https://images.datacamp.com/image/upload/v1679944084/Joining_Data_in_SQL_458a8fa873.png
@@ -388,8 +392,10 @@ WHERE  c.customer_id IS NULL;
 ---
 
 <br><br>
+<hr><hr>
+<br><br>
 
-## 7. Practice
+## (Bonus) Practice SQL Joins
 
 Use the `customers` and `orders` tables created earlier in this lesson to answer the following questions. Write a SQL query for each one.
 
