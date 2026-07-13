@@ -492,11 +492,39 @@ FROM students;
 Aggregates apply to whatever rows match the `WHERE` clause:
 
 ```sql
--- Average score only for students older than 25
+-- Count only students older than 25
 SELECT COUNT(*) AS older_students
 FROM students
 WHERE age > 25;
 ```
+
+<br><br>
+
+### `GROUP BY`
+
+So far, aggregates return a single value for the whole table. `GROUP BY` lets you calculate that value **per group** — one result row per unique value in the grouping column.
+
+```sql
+SELECT column, AGGREGATE(other_column)
+FROM table_name
+GROUP BY column;
+```
+
+```sql
+-- How many students are at each age?
+SELECT age, COUNT(*) AS num_students
+FROM students
+GROUP BY age;
+```
+
+```sql
+-- Highest score per age group
+SELECT age, MAX(score) AS best_score
+FROM students
+GROUP BY age;
+```
+
+The rule is simple: every column in `SELECT` must either be **the grouped column** or **wrapped in an aggregate function**.
 
 ---
 
